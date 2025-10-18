@@ -1,8 +1,8 @@
 🤖 RecomHub — Intelligent Recommendation Engine
 🚀 Overview
 
-RecomHub is a Python-based recommendation engine backend that uses machine learning to suggest items (such as movies or products) based on user preferences.
-Built with the Flask framework, it exposes RESTful APIs for fetching recommendations, integrates seamlessly with a dataset of 4000+ items, and includes a clean and interactive frontend in HTML, CSS, and JavaScript for visualization.
+RecomHub is a Python-based recommendation engine backend that uses **AI and machine learning prediction models** to intelligently suggest items (such as movies or products) based on user preferences.
+Built with the **Flask framework**, it exposes **RESTful APIs** for fetching recommendations, seamlessly integrates a dataset of **4000+ items**, and includes a clean, interactive **frontend in HTML, CSS, and JavaScript** for real-time visualization.
 
 Whether it’s for movie lovers, shoppers, or content platforms — RecomHub delivers personalized, data-driven insights instantly.
 
