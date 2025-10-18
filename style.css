@@ -1,0 +1,296 @@
+/* =============================
+   Base Reset & Typography
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f8fbff; /* soft white-blue background */
+  color: #1a1a2e;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: #0d3b66;
+}
+
+/* =============================
+   Navbar
+============================= */
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background: #a3d0fa; /* soft light blue */
+  color: #0d3b66;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-bottom: 2px solid #a3d5ff;
+}
+
+.topbar .brand {
+  display: flex;
+  align-items: center;
+}
+
+.topbar img {
+  width: 55px;
+  margin-right: 1rem;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(61, 169, 252, 0.3);
+}
+
+.topbar h1 {
+  font-size: 1.6rem;
+  color: #0d3b66;
+}
+
+.topbar .tagline {
+  font-size: 0.85rem;
+  color: #3a6ea5;
+}
+
+/* =============================
+   Hero Section
+============================= */
+.hero {
+  background: linear-gradient(135deg, #e8f4ff, #d6ebff, #b5dcff);
+  color: #0d3b66;
+  text-align: center;
+  padding: 4rem 1rem;
+  box-shadow: 0 6px 15px rgba(61, 169, 252, 0.15);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #3a6ea5;
+}
+
+.hero-btn {
+  background: #3da9fc;
+  color: #ffffff;
+  padding: 0.75rem 1.8rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(61, 169, 252, 0.25);
+}
+
+.hero-btn:hover {
+  background: #5ab7ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(61, 169, 252, 0.3);
+}
+
+/* =============================
+   Container
+============================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* =============================
+   Info Section
+============================= */
+.info {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.info h3 {
+  margin-bottom: 1rem;
+  color: #0d3b66;
+}
+
+.info p {
+  color: #3a6ea5;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* =============================
+   Controls Section
+============================= */
+.controls h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #0d3b66;
+}
+
+.control-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.control-card {
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  flex: 1 1 320px;
+  max-width: 360px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(61, 169, 252, 0.15);
+}
+
+.control-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(61, 169, 252, 0.25);
+}
+
+.control-card label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #0d3b66;
+}
+
+/* Inputs and selects */
+.control-card select,
+.control-card input,
+.control-card textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #a3d5ff;
+  font-size: 1rem;
+  background: #f0f8ff;
+  color: #0d3b66;
+  transition: all 0.3s ease;
+}
+
+.control-card select:focus,
+.control-card input:focus,
+.control-card textarea:focus {
+  outline: none;
+  border-color: #3da9fc;
+  box-shadow: 0 0 8px rgba(61, 169, 252, 0.4);
+  background: #ffffff;
+}
+
+/* Description Box */
+.control-card textarea {
+  height: 100px;
+  resize: none;
+  background: linear-gradient(145deg, #f9fcff, #eaf7ff);
+  border: 1.5px solid #b5d9ff;
+  color: #0d3b66;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.control-card textarea:focus {
+  border-color: #3da9fc;
+  box-shadow: 0 0 10px rgba(61, 169, 252, 0.3),
+              inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button */
+.control-card .btn {
+  width: 100%;
+  background: #3da9fc;
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  box-shadow: 0 5px 12px rgba(61, 169, 252, 0.3);
+}
+
+.control-card .btn:hover {
+  background: #5ab7ff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(61, 169, 252, 0.35);
+}
+
+/* =============================
+   Recommendations Grid
+============================= */
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.recommendation-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(61, 169, 252, 0.25);
+}
+
+.recommendation-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #e0f3ff;
+}
+
+.recommendation-card .content {
+  padding: 1rem;
+  flex: 1;
+}
+
+.recommendation-card h4 {
+  margin-bottom: 0.4rem;
+  color: #0d3b66;
+}
+
+.recommendation-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #3a6ea5;
+}
+
+.recommendation-card .price-score {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #3da9fc;
+}
+
+/* =============================
+   Footer
+============================= */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #e8f4ff, #d6ebff);
+  color: #0d3b66;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}

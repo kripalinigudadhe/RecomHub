@@ -1,0 +1,79 @@
+*<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RecomHub — Smart AI Recommendations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="topbar">
+    <div class="brand">
+      <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="RecomHub Logo" />
+      <div class="brand-text">
+        <h1>RecomHub</h1>
+        <p class="tagline">AI-powered Recommendations • Smarter Choices</p>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h2>Discover What You’ll Love Next</h2>
+      <p class="lead">
+        Explore AI powered recommendations for your favorite items.
+        Build with Machine Learning that understands your interest.
+      </p>
+      <a href="#explore" class="btn hero-btn">Explore Recommendations</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Info Section -->
+    <section class="info">
+      <h3>How RecomHub Works</h3>
+      <p>
+        RecomHub uses <b>content-based filtering</b> powered by <b>TF-IDF</b> and <b>cosine similarity</b>.
+        It compares your entered preferences with thousands of movies in our dataset and recommends
+        the closest matches.
+      </p>
+    </section>
+
+    <!-- Controls Section -->
+    <section id="explore" class="controls">
+      <h3>Try It Yourself</h3>
+      <div class="control-grid">
+
+        <div class="control-card">
+          <h4>Enter Your Preferences</h4>
+
+          <label for="genre">Genre</label>
+          <input type="text" id="genre" placeholder="e.g., Drama | Action | Comedy" />
+
+          <label for="description">Description</label>
+          <textarea id="description" rows="4" placeholder="Describe the type of movie you're interested in..."></textarea>
+
+          <label for="year">Release Year</label>
+          <input type="number" id="year" placeholder="e.g., 2010" />
+
+          <button id="btn-recommend" class="btn">Recommend Movies</button>
+        </div>
+      </div>
+
+<!-- Recommendations Output -->
+      <div id="recommendations" class="recommendations"></div>
+    </section>
+ </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 <b>RecomHub</b></p>
+    </footer>
+ 
+
+  <script src="app.js"></script>
+</body>
+</html>
+*
